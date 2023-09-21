@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#001258"
+    tools:context=".CalcSh">
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#F40303"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_home_24"
+        tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="379dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/teknikseyler_chalk_yellow1"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/rtdShCtoO"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="SICAKLIK --> DİRENÇ"
+        android:textAlignment="center"
+        android:textColor="@color/buttontextcolor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainMerhaba"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/mainMerhaba"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:text="RTD (PT100) DÖNÜŞTÜRÜCÜ"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/rtdShOtoC"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="DİRENÇ --> SICAKLIK"
+        android:textAlignment="center"
+        android:textColor="@color/buttontextcolor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rtdShCtoO"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/rtdFrmValC"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_edittext"
+        android:ems="10"
+        android:hint="@string/insertValue"
+        android:importantForAccessibility="yes"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned|numberDecimal"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/inputhinttextcolor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rtdShCtoO"
+        tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/rtdFrmValO"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_edittext"
+        android:ems="10"
+        android:hint="@string/insertValue"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal|numberSigned"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/inputhinttextcolor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rtdShOtoC" />
+
+    <TextView
+        android:id="@+id/rtdshToValO"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/border_edittext"
+        android:hint="@string/resultTextViewHint"
+        android:paddingTop="12dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/inputhinttextcolor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rtdShCtoO" />
+
+    <TextView
+        android:id="@+id/rtdshToValC"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/border_edittext"
+        android:hint="@string/resultTextViewHint"
+        android:paddingTop="12dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/inputhinttextcolor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rtdShOtoC" />
+
+    <TextView
+        android:id="@+id/inputtemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:text="°C"
+        android:textAlignment="center"
+        android:textColor="@color/buttontextcolor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rtdFrmValC"
+        app:layout_constraintEnd_toEndOf="@+id/rtdFrmValC"
+        app:layout_constraintTop_toTopOf="@+id/rtdFrmValC"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/outputohm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:text="Ω"
+        android:textAlignment="center"
+        android:textColor="@color/buttontextcolor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rtdshToValO"
+        app:layout_constraintEnd_toEndOf="@+id/rtdshToValO"
+        app:layout_constraintTop_toTopOf="@+id/rtdshToValO"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/inputohm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:text="Ω"
+        android:textAlignment="center"
+        android:textColor="@color/buttontextcolor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rtdFrmValO"
+        app:layout_constraintEnd_toEndOf="@+id/rtdFrmValO"
+        app:layout_constraintTop_toTopOf="@+id/rtdFrmValO"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/outputtemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:text="°C"
+        android:textAlignment="center"
+        android:textColor="@color/buttontextcolor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/rtdshToValC"
+        app:layout_constraintEnd_toEndOf="@+id/rtdshToValC"
+        app:layout_constraintTop_toTopOf="@+id/rtdshToValC"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

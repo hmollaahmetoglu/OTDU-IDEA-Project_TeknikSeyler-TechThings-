@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/constraintcolor"
+    tools:context=".ConverterSelectSh">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/teknikseyler_chalk_yellow1"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/cvrtslctbtnPress"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/constraintcolor"
+        android:contentDescription="@string/pressconvertbtn"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/pressconvertbtn"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/cvrtslctbtnTemp"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/constraintcolor"
+        android:contentDescription="@string/tempconvertbtn"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvrtslctbtnPress"
+        app:srcCompat="@drawable/tempconvertbtn"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/cvrtslctbtnLenght"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/constraintcolor"
+        android:contentDescription="@string/tempconvertbtn"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvrtslctbtnTemp"
+        app:srcCompat="@drawable/lenghtconvertbtn" />
+
+    <TextView
+        android:id="@+id/cvrtslctPress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/pressconvertbtn"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/constraintcolor"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/cvrtslctbtnPress"
+        app:layout_constraintStart_toStartOf="@+id/cvrtslctbtnPress"
+        app:layout_constraintTop_toTopOf="@+id/cvrtslctbtnPress" />
+
+    <TextView
+        android:id="@+id/cvrtslctTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/tempconvertbtn"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/constraintcolor"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/cvrtslctbtnTemp"
+        app:layout_constraintStart_toStartOf="@+id/cvrtslctbtnTemp"
+        app:layout_constraintTop_toTopOf="@+id/cvrtslctbtnTemp" />
+
+    <TextView
+        android:id="@+id/cvrtslctLenght"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/lenghtconvertbtn"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/constraintcolor"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/cvrtslctbtnLenght"
+        app:layout_constraintStart_toStartOf="@+id/cvrtslctbtnLenght"
+        app:layout_constraintTop_toTopOf="@+id/cvrtslctbtnLenght" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="120dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#F40303"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_home_24"
+        tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
